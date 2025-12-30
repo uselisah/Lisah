@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+     /* ===== NAVIGATION - NO CONTAINER ===== */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%;
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
+        /* Desktop Navigation */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #26FF72;
+        }
+        
+        .nav-button {
+            background-color: #26FF72;
+            color: black;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            height: 55px;
+            padding: 0 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .nav-button:hover {
+            background-color: #20e065;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(38, 255, 114, 0.3);
+        }
+        
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        .mobile-nav-links {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            z-index: 999;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .mobile-nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .mobile-nav-links li a:hover {
+            color: #26FF72;
+        }
+        
+        .mobile-close-btn {
+            position: absolute;
+            top: 30px;
+            right: 5%;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: #333;
+            cursor: pointer;
+        }
+        
+        .mobile-nav-button {
+            background-color: #26FF72;
+            color: black;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 20px 30px;
+            }
+            
+            .nav-links {
+                gap: 25px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+            
+            /* Hide desktop navigation */
+            .nav-links {
+                display: none;
+            }
+            
+            /* Show mobile menu button */
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .logo img {
+                height: 35px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 12px 15px;
+            }
+            
+            .nav-button {
+                height: 45px;
+                padding: 0 20px;
+                font-size: 14px;
+            }
+            
+            .logo img {
+                height: 30px;
+            }
+        }
+        .head {
+            text-align: center;
+        }
+/* // FORM // */
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px; /* Increased space between first name and last name */
+    margin-bottom: 25px;
+}
+
+.form-group {
+    position: relative;
+    flex: 1;
+}
+
+.form-group.full-width {
+    flex: 1 0 100%;
+}
+
+/* Top labels styling */
+.form-group > label {
+    display: block;
+    margin-bottom: 10px; /* Increased space between label and input */
+    font-weight: 500;
+    color: #333;
+    font-size: 15px; /* Slightly larger label */
+    position: static;
+    background: transparent;
+    padding: 0;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 14px 15px; /* Slightly reduced padding */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.contact-form input::placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 15px; /* Slightly smaller placeholder */
+}
+
+.contact-form input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.contact-form input:focus::placeholder {
+    color: #ccc;
+}
+
+/* Add some top margin to the whole form for breathing room */
+.contact-form {
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 20px; /* Slightly less gap on mobile */
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+    
+    .form-group > label {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+    
+    .contact-form input::placeholder {
+        font-size: 14px;
+    }
+}
+.centered-viewport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+}
+
+.early-access-btn {
+  display: flex;
+  width: 285px;
+  height: 65px;
+  padding: 27px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 80px;
+  background: rgba(38, 255, 114, 0.71);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .early-access-btn {
+    width: 250px;
+    height: 60px;
+    padding: 25px 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .early-access-btn {
+    width: 220px;
+    height: 55px;
+    padding: 22px 24px;
+    font-size: 14px;
+    border-radius: 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .early-access-btn {
+    width: 200px;
+    height: 50px;
+    padding: 20px 22px;
+    font-size: 13px;
+    border-radius: 60px;
+  }
+}
+
+
+
+/* Container and Layout */
+.consent-container {
+  padding: 1.5rem 0; /* py-6 */
+  border-bottom: 1px solid #f3f4f6; /* border-gray-100 */
+  max-width: 500px;
+}
+
+.consent-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem; /* gap-6 */
+}
+
+.consent-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #374151; /* text-gray-700 */
+  line-height: 1.625; /* leading-relaxed */
+  margin: 0;
+}
+
+/* Toggle Switch Core */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px; /* w-11 */
+  height: 24px; /* h-6 */
+  flex-shrink: 0;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The Slider Track */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e7eb; /* bg-gray-200 */
+  transition: .4s;
+  border-radius: 999px; /* rounded-full */
+}
+
+/* The Toggle Knob */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; /* h-5 */
+  width: 20px; /* w-5 */
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Checked States */
+input:checked + .slider {
+  background-color: #4ade80; /* peer-checked:bg-[#4ade80] */
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px); /* translate-x-full */
+}
+
+/* Focus state for accessibility */
+input:focus + .slider {
+  box-shadow: 0 0 1px #4ade80;
+}
+
+/* Required Note */
+.required-note {
+  font-size: 10px;
+  color: #ef4444; /* text-red-500 */
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+
+</style>
+   <nav class="navbar">
+        <div class="logo">
+            <!-- Your logo image will go here -->
+            <img src="./images/logo.png" alt="Lisah Finance">
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- Mobile Navigation (hidden by default) -->
+        <ul class="mobile-nav-links" id="mobileNavLinks">
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="head">
+        <h2>
+            Get Early Access Notification
+        </h2>
+        <p>Get exclusive updates on Lisah's milestones, 
+            app store launch dates, and special offers reserved for early access.</p>
+    </section>
+
+<div class="contact-form">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Your first name" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Your last name" required>
+        </div>
+    </div>
+    <div class="form-group full-width">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Your email address" required>
+    </div>
+
+    <p>
+        Do you currently hold crypto, stocks or equities with a long-term outlook 
+        (2+ year) or for yourself or for the benefit of your dependents?
+        Yes<input type="radio">  No<input type="radio">
+
+    </p>
+    <p>
+        Yes, I would like to receive promotional and product updates. 
+        I understand I can unsubscribe from these communications at any time.
+    </p>
+     <div class="consent-container">
+  <div class="consent-flex">
+    <p class="consent-text">
+      Yes, I would like to receive promotional and product updates. 
+      I understand I can unsubscribe at any time.
+    </p>
+
+    <label class="toggle-switch">
+      <input type="checkbox" id="promo-consent" required>
+      <span class="slider"></span>
+    </label>
+  </div>
+  <p class="required-note">* Required to proceed</p>
+</div>
+</div>
+
+    <button class="early-access-btn">
+    Submit
+    </button>
+
+   
+
+</body>
+</html>

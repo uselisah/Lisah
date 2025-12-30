@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+/* Mission section styling */
+.mission-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.mission {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container for image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.group-image {
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+}
+
+.group-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Text styling */
+.welcome-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.welcome-message {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mission-section {
+        padding: 60px 15px;
+    }
+    
+    .welcome-title {
+        font-size: 2rem;
+    }
+    
+    .welcome-message {
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+    
+    .group-image {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-section {
+        padding: 50px 15px;
+    }
+    
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-message {
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    
+    .group-image {
+        max-width: 150px;
+    }
+    
+    .image-container {
+        margin-bottom: 30px;
+    }
+}
+</style>
+
+<section class="mission-section">
+    <div class="mission">
+        <div class="image-container">
+            <div class="group-image">
+                <img src="./images/Group.svg" alt="Group">
+            </div>
+        </div>
+        <h2 class="welcome-title">Our Mission and Story</h2>
+        <p class="welcome-message">We will launch this content shortly. Thank you for your patience!</p>
+    </div>
+</section>
+
+</body>
+</html>
