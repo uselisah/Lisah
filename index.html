@@ -18,20 +18,23 @@
 <body>
     <!-- NAVIGATION - NO CONTAINER -->
     <nav class="navbar">
-        <div class="logo">
-            <!-- Your logo image will go here -->
-            <img src="./images/logo.png" alt="Lisah Finance">
-        </div>
-        
-        <!-- Desktop Navigation -->
+        <!-- Desktop Navigation - Everything in one container -->
         <ul class="nav-links">
+            <li class="logo-item">
+                <img class="logo" src="./images/logo.png" alt="Lisah Finance">
+            </li>
             <li><img src="./images/div.png" alt=""></li>
             <li><a href="#features">FEATURES</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact Us</a></li>
-            <li><button class="nav-button">Get Early Access</button></li>
+            <li class="nav-button-item">
+                <button class="nav-button">Get Early Access</button>
+            </li>
         </ul>
+        
+        <!-- Mobile Logo (shown on mobile only) -->
+        <img class="mobile-logo" src="./images/logo.png" alt="Lisah Finance">
         
         <!-- Mobile Menu Button -->
         <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -51,128 +54,121 @@
         </ul>
     </nav>
 
-<section class="hero-section">
-    <div class="hero-container">
-        <!-- Text Content -->
-        <div class="hero-content">
-            <h1 style="font-size: 49px;">Your Long-Term Asset Vault.</h1>
-            <p>Invest toward defined future goals. Lock your portfolio until your target date,
-            ensuring your assets mature without interference from market noise or short-
-            term needs.</p>
-            <div class="hero-buttons">
-                <div class="button-group">
-                    <button class="get-button">Get Early Access</button>
-                    <button class="pricing-btn">View Pricing</button>
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Text Content -->
+            <div class="hero-content">
+                <h1 style="font-size: 49px;">Your Long-Term Asset Vault.</h1>
+                <p>Invest toward defined future goals. Lock your portfolio until your target date,
+                ensuring your assets mature without interference from market noise or short-
+                term needs.</p>
+                <div class="hero-buttons">
+                    <div class="button-group">
+                        <button class="get-button">Get Early Access</button>
+                        <button class="pricing-btn">View Pricing</button>
+                    </div>
+                    <div class="store-buttons-group">
+                        <button class="app-store-btn">
+                            <img src="./images/app_store.png" alt="Download on App Store">
+                        </button>
+                        <button class="play-store-btn">
+                            <img src="./images/google_play.png" alt="Get on Google Play">
+                        </button>
+                    </div>
                 </div>
-                <div class="store-buttons-group">
-                    <button class="app-store-btn">
-                        <img src="./images/app_store.png" alt="Download on App Store">
-                    </button>
-                    <button class="play-store-btn">
-                        <img src="./images/google_play.png" alt="Get on Google Play">
-                    </button>
+            </div>
+            
+            <!-- Images Container -->
+            <div class="hero-images">
+                <div class="asset-logos-container">
+                    <!-- Asset Logos (rectangular image) -->
+                    <img src="./images/asset_logos.png" alt="Asset Logos" class="asset-logos">
+                    
+                    <!-- Phone Mockup (round image on top) -->
+                    <img src="./images/hero_phone_mockup.png" alt="Phone Mockup" class="phone-mockup">
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section">
+        <div class="portfolio-section-content">
+            <h2>Build your asset portfolio</h2>
+            <p>Build a lasting, impulse-proof portfolio aligned with your furthest goals</p>
+        </div>
+    </section>
         
-        <!-- Images Container -->
-        <div class="hero-images">
-            <div class="asset-logos-container">
-                <!-- Asset Logos (rectangular image) -->
-                <img src="./images/asset_logos.png" alt="Asset Logos" class="asset-logos">
-                
-                <!-- Phone Mockup (round image on top) -->
-                <img src="./images/hero_phone_mockup.png" alt="Phone Mockup" class="phone-mockup">
+    <!-- FEATURES GRID SECTION -->
+    <section class="features-grid-section">
+        <div class="features-container">
+            <!-- Left Top Box -->
+            <div class="feature-box feature-left-top">
+                <h3>GLOBAL ASSET ACCESS</h3>
+                <p>Invest in high-conviction US stocks, indices and crypto for legacy building.</p>
+            </div>
+            
+            <!-- Left Bottom Box -->
+            <div class="feature-box feature-left-bottom">
+                <h3>Event-Based PORTFOLIOS</h3>
+                <p>Create portfolios for life milestones with custom commitment dates for discipline.</p>
+            </div>
+            
+            <!-- Middle Big Box -->
+            <div class="feature-box feature-middle">
+                <div class="middle-content">
+                    <h3>iOS & Android App</h3>
+                    <p>Enforce long-term wealth goals by locking assets against market temptation.</p>
+                </div>
+                <div class="middle-image">
+                    <img src="./images/lisah_app_portfolio_overview.png" alt="">
+                </div>
+            </div>
+            
+            <!-- Right Top Box -->
+            <div class="feature-box feature-right-top">
+                <h3>Time-Locked Asset Vault</h3>
+                <p>Irrevocably lock stocks and crypto to protect them from short-term impulse selling.</p>
+            </div>
+            
+            <!-- Right Bottom Box -->
+            <div class="feature-box feature-right-bottom">
+                <h3>Verifiable Growth Snapshots</h3>
+                <p>Download and share live, watermarked proof of your long-term asset growth; inspire others.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-<!-- PORTFOLIO SECTION -->
-<section class="portfolio-section">
-    <div class="portfolio-section-content">
-        <h2>Build your asset portfolio</h2>
-        <p>Build a lasting, impulse-proof portfolio aligned with your furthest goals</p>
-    </div>
-</section>
-    
-<!-- FEATURES GRID SECTION -->
-<section class="features-grid-section">
-    <div class="features-container">
-        <!-- Left Top Box -->
-        <div class="feature-box feature-left-top">
-            <h3>GLOBAL ASSET ACCESS</h3>
-            <p>Invest in high-conviction US stocks, indices and crypto for legacy building.</p>
-        </div>
-        
-        <!-- Left Bottom Box -->
-        <div class="feature-box feature-left-bottom">
-            <h3>Event-Based PORTFOLIOS</h3>
-            <p>Create portfolios for life milestones with custom commitment dates for discipline.</p>
-        </div>
-        
-        <!-- Middle Big Box -->
-        <div class="feature-box feature-middle">
-            <div class="middle-content">
-                <h3>iOS & Android App</h3>
-                <p>Enforce long-term wealth goals by locking assets against market temptation.</p>
+    <!-- ===== TWO BOX FLEX SECTION ===== -->
+    <section class="two-box-section">
+        <div class="two-box-container">
+            <!-- First Box -->
+            <div class="box box-1">
+                <div class="box-content">
+                    <h3>For Individuals</h3>
+                    <h2>Zero Impulse Selling</h2>
+                    <p>Solve the problem of selling fundamentally sound assets for avoidable, immediate needs. Once locked, your assets mature undisturbed, guaranteeing commitment to your original thesis.</p>
+                </div>
+                <div class="box-dots">
+                    <img src="./images/Group 427318843.svg" alt="">
+                </div>
             </div>
-            <div class="middle-image">
-                <img src="./images/lisah_app_portfolio_overview.png" alt="">
-               
+
+            <!-- Second Box -->
+            <div class="box box-2">
+                <div class="box-content">
+                    <h3>For Brokers & Exchanges</h3>
+                    <h2>Superior AUM Retention</h2>
+                    <p>Lisah's mandatory lock-up feature drastically reduces impulse liquidation, guaranteeing higher Assets Under Management (AUM) retention over multi-year periods.</p>
+                </div>
+                <div class="box-dots">
+                    <img src="./images/Group 427318846.svg" alt="">
+                </div>
             </div>
         </div>
-        
-        <!-- Right Top Box -->
-        <div class="feature-box feature-right-top">
-            <h3>Time-Locked Asset Vault</h3>
-            <p>Irrevocably lock stocks and crypto to protect them from short-term impulse selling.</p>
-        </div>
-        
-        <!-- Right Bottom Box -->
-        <div class="feature-box feature-right-bottom">
-            <h3>Verifiable Growth Snapshots</h3>
-            <p>Download and share live, watermarked proof of your long-term asset growth; inspire others.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-
-
-<!-- ===== TWO BOX FLEX SECTION ===== -->
-<section class="two-box-section">
-    <div class="two-box-container">
-        <!-- First Box -->
-        <div class="box box-1">
-            <div class="box-content">
-                <h3>For Individuals</h3>
-                <h2>Zero Impulse Selling</h2>
-                <p>Solve the problem of selling fundamentally sound assets for avoidable, immediate needs. Once locked, your assets mature undisturbed, guaranteeing commitment to your original thesis.</p>
-            </div>
-            <div class="box-dots">
-                <img src="./images/Group 427318843.svg" alt="">
-            </div>
-        </div>
-
-        <!-- Second Box -->
-        <div class="box box-2">
-            <div class="box-content">
-                <h3>For Brokers & Exchanges</h3>
-                <h2>Superior AUM Retention</h2>
-                <p>Lisah's mandatory lock-up feature drastically reduces impulse liquidation, guaranteeing higher Assets Under Management (AUM) retention over multi-year periods.</p>
-            </div>
-            <div class="box-dots">
-                <img src="./images/Group 427318846.svg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
- <div class="app-showcase">
+    <div class="app-showcase">
         <!-- Decorative background circles -->
         <div class="floating-circle circle-1"></div>
         <div class="floating-circle circle-2"></div>
@@ -196,130 +192,127 @@
         </div>
     </div>
 
-
-<section class="faq-section">
-    <div class="faq-title-container">
-        <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
-    </div>
-    
-    <div class="faq-items">
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>What is Lisah and how does it work?</h3>
-                <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Lisah is a revolutionary app that connects users with endless possibilities. It uses advanced AI technology to personalize your experience and help you discover new opportunities.</p>
-            </div>
+    <section class="faq-section">
+        <div class="faq-title-container">
+            <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
         </div>
         
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is Lisah available on both iOS and Android?</h3>
-                <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Yes, Lisah is available for download on both the App Store for iOS devices and Google Play Store for Android devices.</p>
-            </div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is there a free version of Lisah?</h3>
-                <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Yes, we offer a free version with basic features. You can upgrade to our premium plan for access to advanced features and unlimited usage.</p>
-            </div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>How do I contact customer support?</h3>
-                <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>You can contact our customer support team through the app's help section or email us at support@lisahapp.com. We typically respond within 24 hours.</p>
-            </div>
-        </div>
-        
-        <div class="faq-item">
-            <div class="faq-question">
-                <h3>Is my data secure with Lisah?</h3>
-                <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Absolutely. We use end-to-end encryption and follow strict data protection protocols to ensure your personal information remains secure and private.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="footer-section">
-    <div class="footer-container">
-        <!-- Company Column - LEFT SIDE -->
-        <div class="footer-column">
-            <h3 class="footer-heading">Company:</h3>
-            <ul class="footer-links">
-                <li><a href="/mission">Our Mission/Story</a></li>
-                <li><a href="/careers">Careers</a></li>
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </div>
-        
-        <!-- Legal Column - PUSHED TO FAR RIGHT END -->
-        <div class="footer-column">
-            <h3 class="footer-heading">Legal:</h3>
-            <ul class="footer-links">
-                <li><a href="/privacy">Privacy Policy</a></li>
-                <li><a href="/terms">Terms of Use</a></li>
-            </ul>
-            
-            <div class="support-email">
-                 <a href="mailto:support@uselisah.com">support@uselisah.com</a>
+        <div class="faq-items">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is Lisah and how does it work?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lisah is a revolutionary app that connects users with endless possibilities. It uses advanced AI technology to personalize your experience and help you discover new opportunities.</p>
+                </div>
             </div>
             
-            <!-- Social Media Icons -->
-            <div class="social-icons">
-                <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
-                    <!-- LinkedIn SVG -->
-                    <img src="./images/linked in.svg" alt="">
-                </a>
-                
-                <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
-                    <!-- Facebook SVG -->
-                    <img src="./images/facebook.svg" alt="">
-                </a>
-                
-                <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram">
-                    <!-- Instagram SVG -->
-                    <img src="./images/insta.svg" alt="">
-                </a>
-                
-                <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="X (Twitter)">
-                    <!-- X (Twitter) SVG -->
-                    <img src="./images/X (former Twitter).svg" alt="">
-                </a>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is Lisah available on both iOS and Android?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Lisah is available for download on both the App Store for iOS devices and Google Play Store for Android devices.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is there a free version of Lisah?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer a free version with basic features. You can upgrade to our premium plan for access to advanced features and unlimited usage.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I contact customer support?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can contact our customer support team through the app's help section or email us at support@lisahapp.com. We typically respond within 24 hours.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is my data secure with Lisah?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. We use end-to-end encryption and follow strict data protection protocols to ensure your personal information remains secure and private.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer-bottom">
-            <div class="footer-image">
-                <img src="./images/Lisah_logo_green.png" alt="Lisah">
+    </section>
+
+    <section class="footer-section">
+        <div class="footer-container">
+            <!-- Company Column - LEFT SIDE -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Company:</h3>
+                <ul class="footer-links">
+                    <li><a href="/mission">Our Mission/Story</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
             </div>
-            <div class="footer-content">
-                <h1>Lisah works directly with regulated, licensed financial partners to execute 
-                every trade, maintaining strict security and compliance standards.</h1>
-                <p>Third-party logos and trademarks belong to their respective owners. Used for informational purposes only.</p>
-                <p class="copyright">&copy; <span id="currentYear"></span> Lisah Finance. All rights reserved.</p>
+            
+            <!-- Legal Column - PUSHED TO FAR RIGHT END -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Legal:</h3>
+                <ul class="footer-links">
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                </ul>
+                
+                <div class="support-email">
+                     <a href="mailto:support@uselisah.com">support@uselisah.com</a>
+                </div>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://linkedin.com" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <!-- LinkedIn SVG -->
+                        <img src="./images/linked in.svg" alt="">
+                    </a>
+                    
+                    <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+                        <!-- Facebook SVG -->
+                        <img src="./images/facebook.svg" alt="">
+                    </a>
+                    
+                    <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram">
+                        <!-- Instagram SVG -->
+                        <img src="./images/insta.svg" alt="">
+                    </a>
+                    
+                    <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="X (Twitter)">
+                        <!-- X (Twitter) SVG -->
+                        <img src="./images/X (former Twitter).svg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
-    </footer>
+        <footer>
+            <div class="footer-bottom">
+                <div class="footer-image">
+                    <img src="./images/Lisah_logo_green.png" alt="Lisah">
+                </div>
+                <div class="footer-content">
+                    <h1>Lisah works directly with regulated, licensed financial partners to execute 
+                    every trade, maintaining strict security and compliance standards.</h1>
+                    <p>Third-party logos and trademarks belong to their respective owners. Used for informational purposes only.</p>
+                    <p class="copyright">&copy; <span id="currentYear"></span> Lisah Finance. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
 
     <script>
         // Mobile Menu Functionality
@@ -354,42 +347,40 @@
                 document.body.style.overflow = 'auto';
             }
         });
-        document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        const toggle = item.querySelector('.faq-toggle');
         
-        question.addEventListener('click', () => {
-            // Check if this item is already active
-            const isActive = item.classList.contains('active');
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
             
-            // Close all items first
-            faqItems.forEach(otherItem => {
-                otherItem.classList.remove('active');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                question.addEventListener('click', () => {
+                    // Check if this item is already active
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all items first
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
+                    
+                    // If this wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
             });
-            
-            // If this wasn't active, open it
-            if (!isActive) {
-                item.classList.add('active');
+        });
+
+        // Auto-update copyright year
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.getElementById('currentYear');
+            if (yearElement) {
+                yearElement.textContent = currentYear;
             }
         });
-    });
-});
-
-// Auto-update copyright year
-document.addEventListener('DOMContentLoaded', function() {
-    const currentYear = new Date().getFullYear();
-    const yearElement = document.getElementById('currentYear');
-    if (yearElement) {
-        yearElement.textContent = currentYear;
-    }
-});
-
-
-        
     </script>
 </body>
 </html>
