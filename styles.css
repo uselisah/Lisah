@@ -965,7 +965,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Box styling */
 .box {
     flex: 1;
-    border-radius: 20px;
+    border-radius: 65px;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
@@ -1052,7 +1052,7 @@ h1, h2, h3, h4, h5, h6 {
 .app-showcase {
     background: rgba(38, 255, 114, 0.71);
     width: 100%;
-    height: 624px;
+    height: 500px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -1073,10 +1073,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-heading {
     font-family: "Space Grotesk";
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 42px;
+    font-weight: 700;
     color: #050605;
-    margin-bottom: 20px;
+    margin-bottom: 20%;
     line-height: 1.1;
 }
 
@@ -1148,7 +1148,6 @@ h1, h2, h3, h4, h5, h6 {
 .circle-1 {
     width: 250px;
     height: 250px;
-    background: #26ff72;
     top: -120px;
     right: 150px;
 }
@@ -1156,7 +1155,6 @@ h1, h2, h3, h4, h5, h6 {
 .circle-2 {
     width: 180px;
     height: 180px;
-    background: #1a9c4c;
     bottom: -80px;
     left: 80px;
 }
@@ -1164,7 +1162,6 @@ h1, h2, h3, h4, h5, h6 {
 .circle-3 {
     width: 120px;
     height: 120px;
-    background: #0d7a3d;
     top: 40%;
     right: 300px;
 }
